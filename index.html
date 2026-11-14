@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>To-do list</h1>
+    <p id="count" aria-live="polite"></p>
+    <div class="card">
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="What needs doing?" aria-label="New task" autocomplete="off">
+        <button type="submit">Add task</button>
+      </form>
+      <ul id="task-list"></ul>
+      <footer>
+        <div class="filters" id="filters">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="active" aria-pressed="false">Active</button>
+          <button type="button" data-filter="done" aria-pressed="false">Done</button>
+        </div>
+        <button type="button" id="clear">Clear completed</button>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
